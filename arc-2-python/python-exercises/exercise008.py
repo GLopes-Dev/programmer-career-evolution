@@ -1,0 +1,13 @@
+#Desafio 008 - Write a program that reads a value in meters and shows it in centimeters and milimeters (Extra: Show in kilometers and hectometers too)
+print('=' * 10, '[Challenge 008]', '=' * 10)
+meters = float(input('Type a value in METERS: '))
+print('-' * 30)
+print(f'{meters / 1000:.1f} in kilometers')
+print(f'{meters / 100:.1f} in hectometers')
+print(f'{meters / 10:.1f} in decameters')
+print(f'{meters:.1f} meters')
+print(f'{meters * 10:.1f} in decimeters')
+print(f'{meters * 100:.1f} in centimeters')
+print(f'{meters * 1000:.1f} in milimeters')
+print('=' * 30)
+
