@@ -1,6 +1,6 @@
 **Python ------- Arco 1**
 
-Comandos:
+Commands:
 print()
 input()
 int()
@@ -8,62 +8,64 @@ float()
 if
 else
 elif
-.format() "Formata uma variavel para caber dentro das aspas de um texto"
+.format() "Formats a variable to fit within the quotation marks of a text."
 
 
 ==============
-**Aula 4 [=====]**
+**Lesson 4 [=====]**
 ==============
 
-Função PRINT
+PRINT function
 ------------
-Aspas em caracteres são usadas primordialmente para exibir um texto na tela
-Numeros são usados na maioria das vezes para cálculos, sem necessidade das aspas ("/')
-Para juntar mensagens basta colocar (+) entre elas.
-Para o print abaixo não continuar na linha de baixo, mas sim continuar na mesma linha do print acima, basta colocar (, end='')
+Quotation marks in characters are primarily used to display text on the screen.
+Numbers are mostly used for calculations, without the need for quotation marks ("/').
+To join messages, simply place (+) between them.
+To make the print below not continue on the next line, but instead continue on the same line as the print above, simply use (, end='').
 
-Variáveis
+Variables
 ---------
-Todas as variáveis em Python são OBJETOS
-Para atribuir algo a uma variável basta utilizar o símbolo (=)
-Exemplo:
+All variables in Python are OBJECTS
+To assign something to a variable, simply use the symbol (=)
+Example:
 
-Nome = 'Gabriel'
-(Variável nome RECEBE texto 'Gabriel')
+Name = 'Gabriel'
+
+(Variable name RECEIVES text 'Gabriel')
 
 
-"input" é um comando de entrada, onde o computador recebe algum valor ou caractere que o usuário digita e guarda em determinada variável
-
+"Input" is an input command, where the computer receives a value or character that the user types and stores it in a specific variable.
 
 =============
-**Aula 6 [=====]****
+**Lesson 6 [=====]****
 =============
-Tipos primitivos
+Primitive Types
 
-int() - Numeros inteiros (7, 5, -15, 9786)
-bool() - Valores lógicos (True & False)
-str() - Tipo Caracteres ('Bola' - 'Caderno' - 'Qualquer texto que estiver entre aspas')
-float() - Numeros reais (-15.4444 - 3.141516414 - 5.34 - 9.0)
-
-Função .format
-
-O comando .format substitui as chave {} que estiver dentro de uma string no print
-print('O valor de {}'.format(s))
-A função .format vai pegar o conteúdo que estiver dentro de seu parentêses .format(aqui) e vai jogá-lo dentro das chaves que está dentro do conteúdo da string anterior
-print('O valor da soma é {aqui}'.format(soma))
-
-Função Type
-Mostra o tipo primitivo de uma váriavel
-print(type(n1))
+int() - Integers (7, 5, -15, 9786)
+bool() - Logical values ​​(True & False)
+str() - Character type ('Ball' - 'Notebook' - 'Any text between quotation marks')
+float() - Real numbers (-15.4444 - 3.141516414 - 5.34 - 9.0)
 
 
-Funções is()
+The `.format` function
 
-.isnumeric() Mostra se o conteudo digitado pelo usuario é númerico ou não e retorna True ou False
-.isalpha() Mostra se o conteudo digitado pelo usuário é alfabético ou não (se possui somente letras) e retorna True ou False
-.isalnum() Mostra se o conteúdo digitado pelo usuário é alfabético e númerico (se possui letras ou números) e retorna True ou False
-.isupper() Mostra se o conteúdo digitado pelo usuário possui somente letras MAIÚSCULAS e retorna True ou False
-Ex:
+The `.format` command replaces the curly braces `{}` within a string in the print statement:
+`print('The value of {}'.format(s))`
+The `.format` function will take the content within its parentheses `.format(here)` and place it inside the curly braces within the previous string:
+`print('The sum is {here}'.format(sum))`
+
+The `Type` function:
+Shows the primitive type of a variable:
+`print(type(n1))`
+
+
+The `is()` function:
+
+`.isnumeric()` Displays whether the content entered by the user is numeric or not and returns True or False.
+`.isalpha()` Displays whether the content entered by the user is alphabetic or not (if it only has letters) and returns True or False.
+`.isalnum()` Displays whether the content entered by the user is alphabetic and numeric (if it has letters or numbers) and returns True or False.
+`.isupper()` Displays whether the content entered by the user has only UPPERCASE letters and returns True or False.
+
+Example:
 n = input('Type anything: ')
 print(n.isnumeric())
 print(n.isalpha())
@@ -74,48 +76,66 @@ print(n.isupper())
 
 
 
-
 =============
-**Aula 7 [=====]**
+**Lesson 7 [=====]**
 =============
-Operadores Aritméticos e Ordem de precedência
-Simbolo de Igualdade em Python: ==
+Arithmetic Operators and Order of Precedence
+Equality Symbol in Python: ==
 
-*Operadores:*
-(+ e -) Adição e Subtração
-(*) Multiplicação
-(/) Divisão
-(**) Exponenciação/Potência
-(//) Divisão Inteira
-(%) Módulo/Resto da divisão
+*Operators:*
+(+ and -) Addition and Subtraction
+(*) Multiplication
+(/) Division
+(**) Exponentiation/Power
+(//) Integer Division
+(%) Modulus/Remainder of Division
 
-pow() Potenciação
-Raiz quadrada = numero**(1/2)
-Raiz cubica = numero**(1/3)
+pow() Exponentiation
+Square root = number**(1/2)
+Cube root = number**(1/3)
 
-*Ordem:*
+*Order:*
 
-() Parênteses
-(**) Exponenciação/Potência
-(*, /, //, %) Multiplicação, Divisão, Divisão Inteira, Módulo/Resto da Divisão
-(+, -) Adição e Subtração
+() Parentheses
+(**) Exponentiation/Power
+(*, /, //, %) Multiplication, Division, Integer Division, Modulus/Remainder of Division
+(+, -) Addition and Subtraction
 
+**Space Formatting:**
 
-**Formatação de Espaços:**
+print('Nice to meet you') {}'.format(name))
+{:20} Twenty spaces
+{:>20} Twenty spaces to the right
+{:<20} Twenty spaces to the left
+{:^20} Twenty spaces to both sides
+{:=^20} Twenty centered spaces filled with any symbol after the :
 
-print('Prazer em te conhecer {}'.format(name))
-{:20} Vinte espaços
-{:>20} Vinte espaços para direita
-{:<20} Vinte espaços para esquerda
-{:^20} Vinte espaços pros dois lados
-{:=^20} Vinte espaços centralizados preenchidos com qualquer simbolo depois do :
+**Decimal Place Formatting:**
 
-**Formatação de casas Decimais:**
-
-{:.3f} O numero é a quantidade de casas decimais que você quer que apareça, o F significa flutuante, float que é real em Python
-
+{:.3f} The number is the number of decimal places you want to appear, the F means floating point, float which is real in Python
 
 
 
+==========
+**Lesson 8 [----]**
+==========
+**Python Modules**
 
+*How to import modules/libraries?*
+`import libraryname` - it imports all the functions inside this library
 
+*How to import a SPECIFIC function from a library?*
+
+`from libraryname import functionname` - it imports the specified function from the chosen library
+`from libraryname import functionName, functionName` - it imports two or more functions from the chosen library
+
+**Standard Libraries:**
+
+`import math` - It's a mathematics library, it comes with a lot of extras functions like:
+
+`ceil()` - Makes a round up.
+`floor()` - Makes a round down
+`trunc()` - Removes numbers from the decimal point onwards
+`pow()` - Calculates the power of two numbers.
+`sqrt()` - Calculates the Square Root of a number.
+`factorial` - Calculates the Factorial of a number.
