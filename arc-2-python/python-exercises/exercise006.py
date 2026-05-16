@@ -6,3 +6,6 @@ print(f'{n} double is {2 * n}')
 print(f'{n} triple is {3 * n}')
 print(f'{n} square root is {math.sqrt(n)}')
 print('=' * 20)
+
+#Learned how to use the math module to calculate the square root of a number. The math.sqrt() function is used to compute the square root of the input number n.
+#Learned it from TikTok

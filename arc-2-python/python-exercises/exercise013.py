@@ -6,3 +6,9 @@ salary = float(input('Salary: '))
 final = increase(salary, incr)
 print('-' * 35)
 print(f'New salary: {final:.2f}\n', '=' * 35)
+
+
+#Learned importing functions from other files, and how to use them. In this case, the function 'discount' is imported from the 'utilities' file"
+# and it calculates the new price after applying the discount.
+
+#Learned it from TikTok

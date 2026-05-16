@@ -6,3 +6,10 @@ value = float(input('Product price: '))
 final = discount(value, disc)
 print('-' * 35)
 print(f'New price: {final:.2f}')
+
+
+
+#Learned importing functions from other files, and how to use them. In this case, the function 'discount' is imported from the 'utilities' file"
+# and it calculates the new price after applying the discount.
+
+#Learned it from TikTok
