@@ -1,5 +1,4 @@
-# 📓 Developer Log: Evolution Pipeline
-## 📅 Date: May 15, 2026 (Friday)
+## 📅 Study Diary - May 15, 2026 (Friday)
 ---
 
 ### 🚀 Major Milestones of the Day
@@ -9,20 +8,16 @@ Today was a massive turning point in the "Bunker." The focus completely shifted 
 
 ### 🛠️ Technical Evolution & Learnings
 
-#### 1. Advanced Modularization (Arc 2 - Python)
+#### 1. Advanced Modularization
 * **The Concept:** Learned and implemented the SoC (Separation of Concerns) pattern. Created a centralized module named `utilities.py` (housing the core logic for mathematical functions) and started importing it into the main challenge scripts (`desafio012.py` and `desafio013.py`).
 * **Abstraction:** Successfully completed **Challenge 013 (Salary Adjustment)** using this decoupled architecture via `from ExerciciosPython.utilities import discount, increase`.
 * **Under the Hood:** Discovered the purpose of the `__pycache__` folder and how the Python interpreter translates human code into **Bytecode (.pyc)** to optimize execution speed.
 
-#### 2. Infrastructure & Git/GitHub (`programmer-career-evolution`)
+#### 2. Infrastructure & Git/GitHub 
 * Installed and configured **Git** locally within the VS Code environment.
 * Connected the editor directly to my global GitHub account, activating **Settings Sync** (cloud-backed workspace configuration accessible anywhere in the world, including Japan).
 * Restructured the project directory using the international date format standard (`YYYY-MM-DD`), ensuring clean, automated chronological sorting.
 * Created and initialized the official repository: `programmer-career-evolution` with a professional setup, including an MIT License and a strategic README.md outlining my timeline toward university and the **MEXT scholarship**.
-
-#### 3. AI & Prompt Engineering
-* Experienced the power of **Context Awareness** firsthand through GitHub Copilot / Intellisense. The AI predicted my thought process and suggested entire comment blocks and strings before I even finished typing, based purely on the file's historical context.
-* Scratched the surface of high-level AI concepts by exploring visual deep-dives into **Pygame** (the Game Loop pattern) and the mathematical architecture of **Recurrent Neural Networks (LSTMs)** in PyTorch.
 
 ---
 
