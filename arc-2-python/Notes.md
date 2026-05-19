@@ -139,3 +139,69 @@ print('Nice to meet you') {}'.format(name))
 `pow()` - Calculates the power of two numbers.
 `sqrt()` - Calculates the Square Root of a number.
 `factorial` - Calculates the Factorial of a number.
+
+
+==========
+**Lesson 9 [----]**
+==========
+**Manipulating Strings**
+
+**Slicing Strings**
+`var = 'Hello, World'`
+`var[5]` - Shows the letter associated with the position inside the brackets
+`var[0:5]` - Displays the letters from the first specified position to the second specified position. 
+`var[1:8:2]` - Displays the letters from the first specified position to the second specified position, but the last number determines how many letters will be skiped between them
+`var[:6]` - Displays the letters from the FIRST POSITION to the specified position.
+`var[3:]` - Displays the letters from the first specified position to the final of the phrase
+`var[0::3]` - Displays the letters from the first specified position to the last phrase letter, and the last number determines how many letters will be skiped between them
+*Example*
+    `print(var)` - *Output:* Hello, World
+    `print(var[5])` *Output:* ,
+    `print(var[0])` *Output:* H
+    `print(var[0:5])` *Output:* Hello    (',' doesn't appears because Python just count to the last specified position, but don't include they)
+    `print(var[1:8:2])` *Output:* el,W
+*Obs:* Python starts counting the first letter as 0.
+
+**Analysis**
+`var = "Hello, I'm Gabriel. I passed in the MEXT Exam and I'll travel to Japan in 2029."`
+`len(var)` - Shows the phrase total length (total characters)
+`.count('e')` - Shows how many times the specified letter appears within the sentence
+`.count('e', 0, 70)` Shows how many times the specified letter appears within the sentence since the first specified position to the second specified position
+`.find('MEXT')` - Search in what position the specified characters starts to appears within the sentence
+`'MEXT' in var` - Search if the specified string or characters exists inside the sentence
+*Example*
+    `print(var)` *Output:* Hello, I'm Gabriel. I passed in the MEXT Exam and I'll travel to Japan in 2029.
+    `print(len(var))` *Output:* 79 (var has 79 characters)
+    `print(var.count('e'))` *Output:* 5  (uppercase "E" doesn't count as lowercase 'e')
+    `print(var.count('e', 0, 50))` *Output:* 4
+    `print(var.find('MEXT'))` *Output:* 36
+    `print('MEXT' in var)` *Output:* True
+    `print('dog' in var)` *Output:* False
+
+
+
+**Transformation**
+
+`var = "   My Programming Career   "`
+`.replace('Career', 'Journey')` - Replaces the first specified character with the second one
+`.upper()` - Transforms the whole sentence in Uppercase letters
+`.lower()` - Transforms the whole sentence in Lowercase letters
+`.capitalize()` - Capitalize the whole sentence (The first letter of the sentence will be shown in Uppercase and the rest will be shown in lowercase)
+`.title()` - The first letter of all the words will be shown in Uppercase.
+`.strip()` - Remove all the unnecessary whitespace at the beginning and end of the sentence.
+`.rstrip()` - Remove all the unnecessary whitespace at the beginning and right side of the sentence.
+`.lstrip()` - Remove all the unncessary whitespace at the beginning and left side of the sentence.
+
+**Division**
+
+`var = "  Hello, I'm Gabriel and I'm 15 years old."`
+`.split()` - Split the whole sentence into individual lists
+*Example:*
+    `print(var.split())` *Output:* ['Hello,', 'I'm', 'Gabriel', 'and', 'I'm', '15', 'years', 'old.']
+                                    [012345]   [012]  [0123456]  [012]  [012]  [01]  [01234]  [012]
+
+**Junction**
+`var = "  Hello, I'm Gabriel and I'm 15 years old."`
+`'-'.join(var)` - Transforms the split sentence in a unique sentence, joining the words with the determined characters inside the single quotes.
+
+
