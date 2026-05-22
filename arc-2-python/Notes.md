@@ -205,3 +205,23 @@ print('Nice to meet you') {}'.format(name))
 `'-'.join(var)` - Transforms the split sentence in a unique sentence, joining the words with the determined characters inside the single quotes.
 
 
+
+==========
+**Searchs & Solo Studying [2026-05-21]**
+==========
+
+* **Save data on .txt files**
+
+`with open("file", "mode") as Name:` 
+`   Name.write("N/A")              ` 
+
+Opens the file where you want to save something, working depending on the mode your put after the filename in parentheses. 
+The "as Name" save the filename as the name you put after the "as", but only save as it inside the code, it don't change the original filename
+
+The function has "Name.write("N/A")" inside it. The Name.write writes what you want inside the selected file.
+
+
+Modes
+"w" - Deletes what was previously saved in the file and saves the last information entered.
+"a" - Add the last information entered to the file and does not delete what was already in it
+"r" - Read mode, displays the entire contents of the .txt file in the terminal
