@@ -12,7 +12,7 @@ elif
 
 
 ==============
-**Lesson 4 [=====]**
+**Lesson 4 [2026-05-12]**
 ==============
 
 PRINT function
@@ -36,7 +36,7 @@ Name = 'Gabriel'
 "Input" is an input command, where the computer receives a value or character that the user types and stores it in a specific variable.
 
 =============
-**Lesson 6 [=====]****
+**Lesson 6 [2026-05-13]****
 =============
 Primitive Types
 
@@ -77,7 +77,7 @@ print(n.isupper())
 
 
 =============
-**Lesson 7 [=====]**
+**Lesson 7 [2026-05-14]**
 =============
 Arithmetic Operators and Order of Precedence
 Equality Symbol in Python: ==
@@ -103,7 +103,7 @@ Cube root = number**(1/3)
 
 **Space Formatting:**
 
-print('Nice to meet you') {}'.format(name))
+print('Nice to meet you') {}'.format(name)
 {:20} Twenty spaces
 {:>20} Twenty spaces to the right
 {:<20} Twenty spaces to the left
@@ -117,7 +117,7 @@ print('Nice to meet you') {}'.format(name))
 
 
 ==========
-**Lesson 8 [----]**
+**Lesson 8 [2026-05-16]**
 ==========
 **Python Modules**
 
@@ -142,7 +142,7 @@ print('Nice to meet you') {}'.format(name))
 
 
 ==========
-**Lesson 9 [----]**
+**Lesson 9 [2026-05-19]**
 ==========
 **Manipulating Strings**
 
@@ -225,3 +225,26 @@ Modes
 "w" - Deletes what was previously saved in the file and saves the last information entered.
 "a" - Add the last information entered to the file and does not delete what was already in it
 "r" - Read mode, displays the entire contents of the .txt file in the terminal
+
+
+==========
+**Lesson 10 [2026-05-23]**
+==========
+**Simple and compound Conditions**
+
+
+* **Base Condition**
+
+`if` *condition*:
+    *True Block*
+
+* **Compound Condition**
+
+`if` *condition*:
+    *True Block*
+`else`
+    *False Block*
+
+
+* **Fast Condition**
+print('*block*' if *object* <=3 else '*second block*')
