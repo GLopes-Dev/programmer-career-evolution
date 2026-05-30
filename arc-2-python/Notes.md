@@ -248,3 +248,11 @@ Modes
 
 * **Fast Condition**
 print('*block*' if *object* <=3 else '*second block*')
+
+
+=========
+**New Commands** [2026-05-30]
+=========
+`max()` - Search for the highest value inside of a list
+`min()` - Search for the lowest value inside of a list
+
