@@ -10,7 +10,7 @@ n3 = int(input("Number 3: "))
 print("=" * 30)
 
 if (n1 == n2) and (n1 == n3):
-    print("The numbers are equals.")
+    print("The numbers are equal.")
 elif n1 > n2 and n1 > n3:
     largest_number = n1
     print(f"Largest number: {n1}")
@@ -48,18 +48,24 @@ for i in range (3):
         smallest_num = num
 print("=" * 30)
 print(numbers)
-print(f"Largest number: {largest_num}\nSmallest number: {smallest_num}\n", "=" * 30)
+if numbers[0] == numbers[1] and numbers[0] == numbers[2]:
+    print("The numbers are equal.")
+else:
+    print(f"Largest number: {largest_num}\nSmallest number: {smallest_num}\n", "=" * 30)
 
 
 
 #Fast Version v2
 print("=" * 10, "[Challenge 033]", "=" * 10)
-numbers = []
+numbersL = []
 for i in range (3):
     num = int(input(f"{i+1}° Number: "))
-    numbers.append(num)
-largest_num = max(numbers)
-smallest_num = min(numbers)
+    numbersL.append(num)
+largest_num = max(numbersL)
+smallest_num = min(numbersL)
 print("=" * 30)
-print(numbers)
-print(f"Largest number: {largest_num}\nSmallest number: {smallest_num}\n", "=" * 30)
+print(numbersL)
+if numbersL[0] == numbersL[1] and numbersL[0] == numbersL[2]:
+    print("The numbers are equal.")
+else:
+    print(f"Largest number: {largest_num}\nSmallest number: {smallest_num}\n", "=" * 30)
