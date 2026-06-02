@@ -256,3 +256,7 @@ print('*block*' if *object* <=3 else '*second block*')
 `max()` - Search for the highest value inside of a list
 `min()` - Search for the lowest value inside of a list
 
+
+=========
+**Adding colors to Python** [2026-05-31]
+=========
