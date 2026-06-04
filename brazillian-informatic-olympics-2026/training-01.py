@@ -20,16 +20,3 @@ elif P == 1:
         print('B')
     else:
         print('A')
-
-#Little Challenge - 02
-#Vitoria = 3 pontos | Empate = 1 ponto | Derrota = 0 pontos
-#
-
-Cv, Ce, Cs, Fv, Fe, Fs = map(int, input().split())
-if Cv + Ce == Fv + Fe:
-    if Cs > Fs:
-        print('C')
-    elif Fs > Cs:
-        print('F')
-    else:
-        print('=')
