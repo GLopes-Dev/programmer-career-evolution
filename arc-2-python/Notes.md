@@ -260,3 +260,31 @@ print('*block*' if *object* <=3 else '*second block*')
 =========
 **Adding colors to Python** [2026-05-31]
 =========
+
+**ANSI System - `\033[;;;m`**
+
+**Style Numbers**
+*0 - None*
+*1 - Bold*
+*4 - Underline*
+*7 - Negative*
+
+**Text Color Numbers**
+*30 - White*
+*31 - Red*
+*32 - Green*
+*33 - Yellow*
+*34 - Blue*
+*35 - Purple*
+*36 - Cyan*
+*37 - Grey*
+
+**Background Color Numbers**
+*40 - White*
+*41 - Red*
+*42 - Green*
+*43 - Yellow*
+*44 - Blue*
+*45 - Purple*
+*46 - Cyan*
+*47 - Grey*
