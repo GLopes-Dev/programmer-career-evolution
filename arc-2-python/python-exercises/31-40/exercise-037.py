@@ -3,6 +3,8 @@
 # - 2 for Octal
 # - 3 for Hexadecimal
 
+#OBS: Did an error treatment system in this one using all my knowledge in this topic.
+
 import os
 
 def screen_menu():
