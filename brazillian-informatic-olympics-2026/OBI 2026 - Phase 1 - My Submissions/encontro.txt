@@ -1,0 +1,22 @@
+# ========================
+# Compilador online da OBI
+# ========================
+
+# Digite seu código aqui, por exemplo:
+# print("resposta")
+
+
+a1 = int(input())
+a2 = int(input())
+b1 = int(input())
+b2 = int(input())
+c1 = int(input())
+c2 = int(input())
+chegada = [a1, b1, c1]
+partida = [a2, b2, c2]
+inicio = max(chegada)
+fim = min(partida)
+if inicio <= fim:
+    print((fim - inicio) + 1)
+else:
+    print(0)

@@ -1,0 +1,17 @@
+# ========================
+# Compilador online da OBI
+# ========================
+
+# Digite seu código aqui, por exemplo:
+# print("resposta")
+
+N = int(input())
+I = list(map(int, input().split()))
+pes = 0
+resp = 0
+for i in I:
+    if i < 60:
+        pes += 1
+    else:
+        resp = max(resp, pes)
+print(resp)

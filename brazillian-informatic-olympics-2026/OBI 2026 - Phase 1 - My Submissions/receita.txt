@@ -1,0 +1,12 @@
+# ========================
+# Compilador online da OBI
+# ========================
+
+# Digite seu código aqui, por exemplo:
+# print("resposta")
+
+P = int(input())
+O = int(input())
+dias = [P // 2, O // 4]
+dias.sort()
+print(dias[0])

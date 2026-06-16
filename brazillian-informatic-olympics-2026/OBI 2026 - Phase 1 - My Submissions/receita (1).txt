@@ -1,0 +1,15 @@
+# ========================
+# Compilador online da OBI
+# ========================
+
+# Digite seu código aqui, por exemplo:
+# print("resposta")
+
+P = int(input())
+O = int(input())
+dias1 = P // 2
+dias2 = O // 4
+if dias1 < dias2:
+    print(dias1)
+else:
+    print(dias2)
