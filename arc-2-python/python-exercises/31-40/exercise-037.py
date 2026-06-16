@@ -3,7 +3,7 @@
 # - 2 for Octal
 # - 3 for Hexadecimal
 
-#OBS: Did an error treatment system in this one using all my knowledge in this topic.
+#OBS: Did an error treatment system in this one using all my knowledge that I have in this topic
 
 import os
 
