@@ -8,9 +8,5 @@ for i in range(1, limite + 1):
         partner = x // i
         if partner != i:
             divisors.append(partner)
-
-print(divisors)
-
 divisors.sort()
-
 print(*divisors)
