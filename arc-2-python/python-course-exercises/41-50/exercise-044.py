@@ -22,7 +22,7 @@ match option:
         print(f'Your purchase of R${price:.2f} will cost R${discount:.2f} in the end.')
     case 3:
         installments = price / 2
-        print(f'Your purchase will be split into 2 installments of R${installments}.')
+        print(f'Your purchase will be split into 2 installments of R${installments:.2f}.')
         print(f'Your purchase of R${price:.2f} will cost R${price:.2f} in the end.')
     case 4:
         installments_qty = int(input('How many installments? '))
@@ -30,3 +30,4 @@ match option:
         installments = price_fees / installments_qty
         print(f'Your purchase will be split into {installments_qty} installments of R${installments:.2f} with INTEREST.')
         print(f'Your purchase of R${price:.2f} will cost R${price_fees:.2f} in the end. ')
+        
