@@ -9,8 +9,8 @@ from datetime import date
 
 print('=' * 10, '[Challenge 041]', '=' * 10)
 birth_year = int(input('Birth Year: '))
-actual_year = date.today().year
-age = actual_year - birth_year
+current_year = date.today().year
+age = current_year - birth_year
 print(f'The Athlete is {age} years old.')
 if age <= 9:
     print('Classification: Novice')
