@@ -14,3 +14,4 @@ elif avg >= 5:
     print('The student is in remedial classes.')
 else:
     print('The student failed.')
+    
