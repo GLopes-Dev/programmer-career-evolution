@@ -13,3 +13,4 @@ for l in range(3):
         item = matriz[l][c].split('-')
         if int(item[1]) == nivel:
             print(f'Kanji {item[0]} encontrado na posição [{l}][{c}]')
+            
