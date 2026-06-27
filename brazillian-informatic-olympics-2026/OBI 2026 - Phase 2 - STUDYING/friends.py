@@ -11,4 +11,5 @@ for p in range(M):
 
 sorted_people = sorted(connections.keys())
 for a in sorted_people:
-    print(f'{a}: {sorted(*connections[a])}')
+    print(f'{a}: {' '.join(sorted(connections[a]))}')
+    
