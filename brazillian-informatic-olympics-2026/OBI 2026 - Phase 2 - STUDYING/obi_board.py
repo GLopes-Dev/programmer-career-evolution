@@ -5,6 +5,18 @@ for c in range(N):
     ponto = int(ponto)
     competidores[competidor] = ponto
 
-ranking = sorted(competidores.items(), key=lambda x: (-x[1], x[0]))
+ranking = sorted(competidores.items(), key=lambda comp: (-comp[1], comp[0]))
 for c, p in ranking:
     print(f"{c}: {p}")
+
+  #  competidor = 'Bob'
+  #  ponto = 300
+  #  {'Pedro': 150, 'Ana': 300, 'Maria': 150, 'Bob': 300}
+  #  [('Pedro', 150), ('Ana', 300), ('Maria', 150), ('Bob', 300)]
+  #
+  #
+  #
+  #
+  #
+  #
+  #
