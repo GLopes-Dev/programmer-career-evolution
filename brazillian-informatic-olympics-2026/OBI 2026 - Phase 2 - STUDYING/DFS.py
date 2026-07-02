@@ -33,24 +33,34 @@
 #     'MEXT_Monbukagakusho': []
 # }
 
+import sys
+sys.setrecursionlimit(200000)
+
+# connections = {
+#     'Biel': ['MEXT_Monbukagakusho', 'Cla_Roblox'],
+#     'Cla_Roblox': ['Biel'],
+#     'MEXT_Monbukagakusho': [],
+#     'Guanabara': ['Biel']
+# }
+
+# visitados = set()
+
+# def dfs(no_atual, grafo):
+#     if no_atual in visitados:
+#         return
+    
+#     print(f"Visitando: {no_atual}")
+#     visitados.add(no_atual)
+
+#     for vizinhos in grafo[no_atual]:
+#         dfs(vizinhos, grafo)
+
+# print("--- Starting DFS ---")
+# dfs('Guanabara', connections)
+
 connections = {
-    'Biel': ['MEXT_Monbukagakusho', 'Cla_Roblox'],
-    'Cla_Roblox': ['Biel'],
-    'MEXT_Monbukagakusho': [],
-    'Guanabara': ['Biel']
+    'A': ['B'],
+    'B': ['C'],
+    'C': ['A']
 }
 
-visitados = set()
-
-def dfs(no_atual, grafo):
-    if no_atual in visitados:
-        return
-    
-    print(f"Visitando: {no_atual}")
-    visitados.add(no_atual)
-
-    for vizinhos in grafo[no_atual]:
-        dfs(vizinhos, grafo)
-
-print("--- Starting DFS ---")
-dfs('Guanabara', connections)
