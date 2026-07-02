@@ -4,8 +4,6 @@ def tem_ciclo(atual, conexoes, visitados):
     if atual in visitados:
         return True
     visitados.add(atual)
-    for vizinhos in conexoes[atual]:
-        if
     
 conexoes = {}
 visitados = set()
