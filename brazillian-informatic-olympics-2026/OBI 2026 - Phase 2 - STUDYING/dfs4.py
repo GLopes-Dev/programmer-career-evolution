@@ -3,7 +3,7 @@ altitude = [0] + list(map(int, input().split()))
 caminhos = {}
 for p in range(1, P+1):
     caminhos[p] = []
-for p in range(P):
+for p in range(T):
     I, J = map(int, input().split())
     caminhos[I].append(J)
     caminhos[J].append(I)
