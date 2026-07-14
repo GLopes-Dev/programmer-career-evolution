@@ -8,5 +8,7 @@ for peso in pessoas:
     elevador += peso
     if elevador >= X:
         viagens += 1
-        elevador = 0
+        elevador = peso
+if elevador > 0:
+    viagens += 1
 print(viagens)
