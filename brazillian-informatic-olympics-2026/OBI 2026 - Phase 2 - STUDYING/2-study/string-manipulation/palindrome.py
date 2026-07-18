@@ -1,7 +1,5 @@
 def ispalindrom(word):
     wordinv = word[::-1]
-    if wordinv == word:
-        return True
-    return False
+    return wordinv == word
 word = input().lower()
 print(ispalindrom(word))
