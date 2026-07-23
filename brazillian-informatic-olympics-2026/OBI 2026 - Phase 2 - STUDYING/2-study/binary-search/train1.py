@@ -25,13 +25,13 @@ print(*(ranking))
 
 
 #Bisect
-# import bisect
-# N, M = map(int, input().split())
-# divisoes = list(map(int, input().split()))
-# faixas = list(map(int, input().split()))
-# ogros = list(map(int, input().split()))
-# ranking = []
-# for o in ogros:
-#     idx = bisect.bisect_right(divisoes, o)
-#     ranking.append(faixas[idx])
-# print(ranking)
+import bisect
+N, M = map(int, input().split())
+divisoes = list(map(int, input().split()))
+faixas = list(map(int, input().split()))
+ogros = list(map(int, input().split()))
+ranking = []
+for o in ogros:
+    idx = bisect.bisect_right(divisoes, o)
+    ranking.append(faixas[idx])
+print(ranking)
