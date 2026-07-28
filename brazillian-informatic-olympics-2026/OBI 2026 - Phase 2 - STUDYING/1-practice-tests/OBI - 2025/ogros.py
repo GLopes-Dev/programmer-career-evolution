@@ -3,7 +3,7 @@ import sys
 N, M = map(int, sys.stdin.readline().split())
 divisoes = list(map(int, sys.stdin.readline().split()))
 premios = list(map(int, sys.stdin.readline().split()))
-ogros = list(map(int, sys.stdin.readline()).split())
+ogros = list(map(int, sys.stdin.readline().split()))
 
 def acha_faixa(divisoes, forca):
     ini = 0
@@ -17,7 +17,7 @@ def acha_faixa(divisoes, forca):
             ini = meio + 1
         else:
             fim = meio - 1
-        return resposta + 1
+    return resposta + 1
     
 resultados = []
 for o in ogros:
