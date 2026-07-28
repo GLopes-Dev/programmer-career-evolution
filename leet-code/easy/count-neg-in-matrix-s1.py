@@ -17,3 +17,4 @@ class Solution:
             neg += len(linha) - first_non_negative
         
         return neg
+
