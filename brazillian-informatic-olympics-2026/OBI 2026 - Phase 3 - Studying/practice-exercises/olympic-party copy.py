@@ -1,22 +1,8 @@
 import sys
-
+from bisect import bisect_left
 N = int(sys.stdin.buffer.readline())
 M = int(sys.stdin.buffer.readline())
 turnos = []
-
-def achar_primeiro(T):
-    left = 0
-    right = total_posicoes - 1
-    answer = total_posicoes
-    while left <= right:
-        middle = (left + right) // 2
-        if posicoes[middle] >= T:
-            answer = middle
-            right = middle - 1
-        else:
-            left = middle + 1
-
-    return answer
 
 for _ in range(M):
     t_atual = int(sys.stdin.buffer.readline())
@@ -27,10 +13,13 @@ for _ in range(M):
 posicoes = [n for n in range(1, min(N, 10000) + 1)]
 total_posicoes = len(posicoes)
 for turno in reversed(turnos):
-        inicio = achar_primeiro(turno)
+        inicio = bisect_left(posicoes, turno)
+        if inicio == len(posicoes):
+             continue
+        d = turno - 1
         for i in range(inicio, total_posicoes):
             p = posicoes[i]
-            posicoes[i] = p + (p - 1) // (turno - 1)
+            posicoes[i] = p + (p - 1) // d
 
 sys.stdout.write("\n".join(map(str, posicoes)))
         
